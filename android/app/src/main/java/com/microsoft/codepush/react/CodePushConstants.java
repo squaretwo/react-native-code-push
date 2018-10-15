@@ -23,6 +23,7 @@ public class CodePushConstants {
     public static final String PREVIOUS_PACKAGE_KEY = "previousPackage";
     public static final String REACT_NATIVE_LOG_TAG = "ReactNative";
     public static final String RELATIVE_BUNDLE_PATH_KEY = "bundlePath";
+    public static final String ROOT_PATH_KEY = "rootPath";
     public static final String STATUS_FILE = "codepush.json";
     public static final String UNZIPPED_FOLDER_NAME = "unzipped";
     public static final String CODE_PUSH_APK_BUILD_TIME_KEY = "CODE_PUSH_APK_BUILD_TIME";

@@ -8,6 +8,7 @@
 static NSString *const DiffManifestFileName = @"hotcodepush.json";
 static NSString *const DownloadFileName = @"download.zip";
 static NSString *const RelativeBundlePathKey = @"bundlePath";
+static NSString *const RootPathKey = @"rootPath";
 static NSString *const StatusFile = @"codepush.json";
 static NSString *const UpdateBundleFileName = @"app.jsbundle";
 static NSString *const UpdateMetadataFileName = @"app.json";
@@ -214,6 +215,7 @@ static NSString *const UnzippedFolderName = @"unzipped";
                                                         
                                                         if (relativeBundlePath) {
                                                             [mutableUpdatePackage setValue:relativeBundlePath forKey:RelativeBundlePathKey];
+                                                            [mutableUpdatePackage setValue:newUpdateFolderPath forKey:RootPathKey];
                                                         } else {
                                                             NSString *errorMessage = [NSString stringWithFormat:@"Update is invalid - A JS bundle file named \"%@\" could not be found within the downloaded contents. Please ensure that your app is syncing with the correct deployment and that you are releasing your CodePush updates using the exact same JS bundle file name that was shipped with your app's binary.", expectedBundleFileName];
                                                             

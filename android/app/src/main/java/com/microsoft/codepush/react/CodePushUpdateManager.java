@@ -283,6 +283,7 @@ public class CodePushUpdateManager {
                 }
 
                 CodePushUtils.setJSONValueForKey(updatePackage, CodePushConstants.RELATIVE_BUNDLE_PATH_KEY, relativeBundlePath);
+                CodePushUtils.setJSONValueForKey(updatePackage, CodePushConstants.ROOT_PATH_KEY, newUpdateFolderPath);
             }
         } else {
             // File is a jsbundle, move it to a folder with the packageHash as its name
